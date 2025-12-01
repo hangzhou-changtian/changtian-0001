@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { Activity, Cpu, Zap, Layers, TrendingUp, ShieldCheck, Target, BrainCircuit, Code2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+123
 // --- 数据源 (Data Source) ---
 const rawFundReturns = [
 0.010794571,
