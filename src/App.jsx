@@ -109,33 +109,33 @@ const rawBenchmarkReturns = [
 const RESEARCH_DATA = [
   {
     id: 'depth',
-    title: '深度 DEPTH',
-    subtitle: '深度学习 + LLM 双引擎',
+    title: '算法引擎',
+    subtitle: '深度学习 + 大模型 双引擎',
     icon: BrainCircuit,
     color: 'from-blue-500 to-cyan-500',
     borderColor: 'group-hover:border-cyan-500/50',
-    description: '摒弃传统线性回归，采用 Transformer 架构挖掘非线性市场规律。前华为 AI 专家领衔，将 NLP 领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
-    tags: ['Transformer架构', '非线性因子挖掘', '大模型预测', '华为AI团队']
+    description: '超越传统机器学习算法，采用 Transformer 架构挖掘时空非线性市场规律。前华为开发部部长，AI算法技术专家带领的资深算法/系统工程师团队，将AI领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
+    tags: ['Transformer架构', '大模型因子挖掘', '大模型预测', '前华为AI团队']
   },
   {
     id: 'width',
-    title: '宽度 WIDTH',
-    subtitle: '全链路极致优化',
+    title: '因子引擎',
+    subtitle: '系统级极致性能优化',
     icon: Layers,
     color: 'from-purple-500 to-pink-500',
     borderColor: 'group-hover:border-purple-500/50',
-    description: '从数据清洗、因子挖掘到组合优化，每一行代码都经过系统级调优。覆盖全市场 5000+ 标的，多周期多策略并行，捕捉每一个微小机会，不放过任何市场异动。',
-    tags: ['OS内核级调优', '全市场覆盖', '数据实时清洗', '多策略并行']
+    description: '因子计算引擎，具备毫秒级别完成全市场5000只股票，3000个复杂Graph依赖因子计算的极致性能，从而支持了Tick级别实时因子计算和收益率模型推理预测，有效应对市场拥挤，掌握交易先机',
+    tags: ['OS内核级性能优化', 'AI因子调度引擎', 'Tick级周期预测']
   },
   {
     id: 'speed',
-    title: '速度 SPEED',
-    subtitle: '毫秒必争的极速体验',
+    title: '数据引擎',
+    subtitle: '高性能和高可靠的数据聚合能力',
     icon: Zap,
     color: 'from-yellow-500 to-orange-500',
     borderColor: 'group-hover:border-yellow-500/50',
-    description: '自研高性能网络协议栈，旁路内核直接处理数据包。关键算子汇编级优化，配合 FPGA 硬件加速，确保在极端行情下依然快人一步，降低滑点损耗。',
-    tags: ['低延迟FPGA', '算子汇编优化', '高性能网络栈', '极速交易网关']
+    description: '自研高性能网络协议栈，旁路内核直接处理数据包。所有基础算子均自研重新实现，相较于BLAS/LAPACK等计算库，性能提升300%，配合 FPGA 硬件加速，确保海量逐笔行情能够极速转换为特征数据，降低滑点损耗。',
+    tags: ['低延迟FPGA', '自研高性能算子库', '高性能网络栈', '硬件加速']
   }
 ];
 
@@ -165,7 +165,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           <div key={index} className="flex items-center justify-between gap-6 mb-1">
             <span className="text-sm font-medium flex items-center gap-2">
               <div className="w-2 h-2 rounded-full" style={{backgroundColor: entry.color}}/>
-              {entry.name === 'fundRaw' ? '长添一号' : entry.name === 'benchRaw' ? '中证2000' : '超额收益'}
+              {entry.name === 'fundRaw' ? '长添量选一号' : entry.name === 'benchRaw' ? '中证2000' : '超额收益'}
             </span>
             <span className="text-sm font-bold font-mono text-white">
               {entry.value > 0 ? '+' : ''}{entry.value.toFixed(2)}%
@@ -328,7 +328,7 @@ export default function ChangtianQuantRoadshow() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            LIVE PERFORMANCE | 实盘业绩持续更新
+            LIVE PERFORMANCE | 实盘业绩持续更新（20250916到20251128）
           </motion.div>
           
           <motion.h1 
@@ -338,11 +338,11 @@ export default function ChangtianQuantRoadshow() {
             className="text-6xl md:text-8xl font-black mb-8 tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-slate-500">
-              逆市<span className="text-red-600">Alpha</span>
+              稳定<span className="text-red-600">Alpha</span>
             </span>
             <br />
             <span className="text-4xl md:text-6xl text-slate-400 font-bold mt-2 block">
-              穿透周期的力量
+              深耕AI算法、追求系统极致性能的力量
             </span>
           </motion.h1>
           
@@ -352,7 +352,7 @@ export default function ChangtianQuantRoadshow() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light"
           >
-            长添量化一号 · 深度学习驱动 · 纯粹超额收益
+            长添量选一号 · AI驱动 · 显著超额收益
           </motion.p>
         </div>
       </header>
@@ -361,9 +361,9 @@ export default function ChangtianQuantRoadshow() {
       <section className="max-w-7xl mx-auto px-6 mb-32 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <MetricCard 
-            title="本期收益 (My Fund)" 
+            title="收益率曲线 (My Fund)" 
             value={`+${fundTotalReturn}%`} 
-            subValue="长添量化一号"
+            subValue="长添量选一号"
             highlight={true}
             icon={TrendingUp}
             delay={0}
@@ -394,11 +394,11 @@ export default function ChangtianQuantRoadshow() {
         >
           <div className="px-5 py-2 rounded-lg bg-emerald-950/30 border border-emerald-500/20 text-sm font-medium text-emerald-400 flex items-center shadow-[0_0_10px_rgba(16,185,129,0.1)]">
             <ShieldCheck className="w-4 h-4 mr-2" />
-            胜率 64% | 持续盈利
+            胜率 64%
           </div>
           <div className="px-5 py-2 rounded-lg bg-yellow-950/30 border border-yellow-500/20 text-sm font-medium text-yellow-400 flex items-center shadow-[0_0_10px_rgba(234,179,8,0.1)]">
             <Zap className="w-4 h-4 mr-2" />
-            回撤控制优异
+            回撤修复周期短
           </div>
         </motion.div>
       </section>
@@ -409,12 +409,12 @@ export default function ChangtianQuantRoadshow() {
           <div>
             <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-2">
               <span className="w-1 h-8 bg-red-600 rounded-full inline-block"></span>
-              业绩走势对比
+              净值曲线
             </h2>
             <p className="text-slate-400">
-              红色曲线（我方）与灰色曲线（指数）的
-              <span className="text-red-400 font-bold mx-1 border-b border-red-500/50">巨大剪刀差</span>
-              印证了我们的策略有效性。
+              红色曲线（基金）与灰色曲线（指数）的
+              <span className="text-red-400 font-bold mx-1 border-b border-red-500/50">逐步形成扩大的喇叭口</span>
+              策略和离线回测高度吻合，累计误差约万分之5。
             </p>
           </div>
         </div>
@@ -476,13 +476,13 @@ export default function ChangtianQuantRoadshow() {
             whileInView={{ opacity: 1, x: 0 }}
             className="lg:col-span-1"
           >
-            <h2 className="text-3xl font-bold text-white mb-6">稳稳的幸福</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">上行的Alpha</h2>
             <div className="w-full h-px bg-white/10 mb-6" />
             <p className="text-slate-400 leading-relaxed mb-8">
-              剔除大盘贝塔波动后，我们为您呈现的是一条纯粹的Alpha曲线。
+              剔除大盘贝塔波动后，是一条稳步上升的Alpha曲线。
               <br/><br/>
-              <span className="text-white font-medium">不依赖牛市，不畏惧熊市。</span>
-              通过多因子模型在每日的波动中积累微小的胜利，最终汇聚成可观的复利。
+              <span className="text-white font-medium">大盘上涨和下跌阶段均有Alpha。</span>
+              在每日的波动中积累微小的胜利，最终汇聚成可观的复利。
             </p>
             <div className="p-6 rounded-xl bg-slate-900 border border-red-500/20">
               <div className="text-xs text-slate-500 uppercase tracking-wider mb-2">Total Excess Return</div>
@@ -532,10 +532,10 @@ export default function ChangtianQuantRoadshow() {
               whileInView={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-5xl font-bold mb-6"
             >
-              硬核研发体系
+              研发实力强大
             </motion.h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              源自华为 AI 团队与清北浙技术精英，构建下一代金融计算基础设施。
+              核心团队全部毕业于北大、浙大，具有多年的华为人工智能和系统工程的丰富研发经验，在量化策略算法研发和深度系统优化上具有深厚功底。
             </p>
           </div>
 
