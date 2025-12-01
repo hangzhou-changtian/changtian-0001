@@ -114,8 +114,8 @@ const RESEARCH_DATA = [
     icon: BrainCircuit,
     color: 'from-blue-500 to-cyan-500',
     borderColor: 'group-hover:border-cyan-500/50',
-    description: '超越传统机器学习算法，采用 Transformer 架构挖掘时空非线性市场规律。前华为开发部部长、AI算法技术专家团队，将AI领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
-    tags: ['Transformer架构', '大模型因子挖掘', '大模型预测', '华为AI团队']
+    description: '超越传统机器学习算法，采用 Transformer 架构挖掘时空非线性市场规律。前华为开发部部长，AI算法技术专家带领的资深算法/系统工程师团队，将AI领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
+    tags: ['Transformer架构', '大模型因子挖掘', '大模型预测', '前华为AI团队']
   },
   {
     id: 'width',
@@ -124,8 +124,8 @@ const RESEARCH_DATA = [
     icon: Layers,
     color: 'from-purple-500 to-pink-500',
     borderColor: 'group-hover:border-purple-500/50',
-    description: '因子计算引擎，具备10毫秒级别完成全市场5000只股票，3000个复杂Graph依赖因子计算的极致性能，从而支持了Tick级别实时因子计算和收益率模型推理预测，有效应对市场拥挤，掌握交易先机',
-    tags: ['OS内核级性能优化', '数据实时聚合', 'Tick级周期预测']
+    description: '因子计算引擎，具备毫秒级别完成全市场5000只股票，3000个复杂Graph依赖因子计算的极致性能，从而支持了Tick级别实时因子计算和收益率模型推理预测，有效应对市场拥挤，掌握交易先机',
+    tags: ['OS内核级性能优化', 'AI因子调度引擎', 'Tick级周期预测']
   },
   {
     id: 'speed',
@@ -134,7 +134,7 @@ const RESEARCH_DATA = [
     icon: Zap,
     color: 'from-yellow-500 to-orange-500',
     borderColor: 'group-hover:border-yellow-500/50',
-    description: '自研高性能网络协议栈，旁路内核直接处理数据包。所有基础算子均自研重新实现，相较于BLAS/LAPACK等计算库，有50%以上性能提升，配合 FPGA 硬件加速，确保在逐笔行情能够快速转换为特征数据，降低滑点损耗。',
+    description: '自研高性能网络协议栈，旁路内核直接处理数据包。所有基础算子均自研重新实现，相较于BLAS/LAPACK等计算库，性能提升300%，配合 FPGA 硬件加速，确保海量逐笔行情能够极速转换为特征数据，降低滑点损耗。',
     tags: ['低延迟FPGA', '自研高性能算子库', '高性能网络栈', '硬件加速']
   }
 ];
@@ -165,7 +165,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           <div key={index} className="flex items-center justify-between gap-6 mb-1">
             <span className="text-sm font-medium flex items-center gap-2">
               <div className="w-2 h-2 rounded-full" style={{backgroundColor: entry.color}}/>
-              {entry.name === 'fundRaw' ? '长添一号' : entry.name === 'benchRaw' ? '中证2000' : '超额收益'}
+              {entry.name === 'fundRaw' ? '长添量选一号' : entry.name === 'benchRaw' ? '中证2000' : '超额收益'}
             </span>
             <span className="text-sm font-bold font-mono text-white">
               {entry.value > 0 ? '+' : ''}{entry.value.toFixed(2)}%
@@ -328,7 +328,7 @@ export default function ChangtianQuantRoadshow() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            LIVE PERFORMANCE | 实盘业绩持续更新
+            LIVE PERFORMANCE | 实盘业绩持续更新（20250916到20251128）
           </motion.div>
           
           <motion.h1 
@@ -342,7 +342,7 @@ export default function ChangtianQuantRoadshow() {
             </span>
             <br />
             <span className="text-4xl md:text-6xl text-slate-400 font-bold mt-2 block">
-              AI算法x系统极致性能的力量
+              深耕AI算法、追求系统极致性能的力量
             </span>
           </motion.h1>
           
@@ -398,7 +398,7 @@ export default function ChangtianQuantRoadshow() {
           </div>
           <div className="px-5 py-2 rounded-lg bg-yellow-950/30 border border-yellow-500/20 text-sm font-medium text-yellow-400 flex items-center shadow-[0_0_10px_rgba(234,179,8,0.1)]">
             <Zap className="w-4 h-4 mr-2" />
-            ALpha最大回撤1.36%
+            回撤修复周期短
           </div>
         </motion.div>
       </section>
