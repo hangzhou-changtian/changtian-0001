@@ -109,33 +109,33 @@ const rawBenchmarkReturns = [
 const RESEARCH_DATA = [
   {
     id: 'depth',
-    title: '深度 DEPTH',
-    subtitle: '深度学习 + LLM 双引擎',
+    title: '算法引擎',
+    subtitle: '深度学习 + 大模型 双引擎',
     icon: BrainCircuit,
     color: 'from-blue-500 to-cyan-500',
     borderColor: 'group-hover:border-cyan-500/50',
-    description: '摒弃传统线性回归，采用 Transformer 架构挖掘非线性市场规律。前华为 AI 专家领衔，将 NLP 领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
-    tags: ['Transformer架构', '非线性因子挖掘', '大模型预测', '华为AI团队']
+    description: '超越传统机器学习算法，采用 Transformer 架构挖掘时空非线性市场规律。前华为开发部部长、AI算法技术专家团队，将AI领域的 Attention 机制引入量化交易，在海量数据噪音中精准定位 Alpha。',
+    tags: ['Transformer架构', '大模型因子挖掘', '大模型预测', '华为AI团队']
   },
   {
     id: 'width',
-    title: '宽度 WIDTH',
-    subtitle: '全链路极致优化',
+    title: '因子引擎',
+    subtitle: '系统级极致性能优化',
     icon: Layers,
     color: 'from-purple-500 to-pink-500',
     borderColor: 'group-hover:border-purple-500/50',
-    description: '从数据清洗、因子挖掘到组合优化，每一行代码都经过系统级调优。覆盖全市场 5000+ 标的，多周期多策略并行，捕捉每一个微小机会，不放过任何市场异动。',
-    tags: ['OS内核级调优', '全市场覆盖', '数据实时清洗', '多策略并行']
+    description: '因子计算引擎，具备10毫秒级别完成全市场5000只股票，3000个复杂Graph依赖因子计算的极致性能，从而支持了Tick级别实时因子计算和收益率模型推理预测，有效应对市场拥挤，掌握交易先机',
+    tags: ['OS内核级性能优化', '数据实时聚合', 'Tick级周期预测']
   },
   {
     id: 'speed',
-    title: '速度 SPEED',
-    subtitle: '毫秒必争的极速体验',
+    title: '数据引擎',
+    subtitle: '高性能和高可靠的数据聚合能力',
     icon: Zap,
     color: 'from-yellow-500 to-orange-500',
     borderColor: 'group-hover:border-yellow-500/50',
-    description: '自研高性能网络协议栈，旁路内核直接处理数据包。关键算子汇编级优化，配合 FPGA 硬件加速，确保在极端行情下依然快人一步，降低滑点损耗。',
-    tags: ['低延迟FPGA', '算子汇编优化', '高性能网络栈', '极速交易网关']
+    description: '自研高性能网络协议栈，旁路内核直接处理数据包。所有基础算子均自研重新实现，相较于BLAS/LAPACK等计算库，有50%以上性能提升，配合 FPGA 硬件加速，确保在逐笔行情能够快速转换为特征数据，降低滑点损耗。',
+    tags: ['低延迟FPGA', '自研高性能算子库', '高性能网络栈', '硬件加速']
   }
 ];
 
